@@ -120,5 +120,26 @@ Java, C# e Ruby já estão inseridas no mercado e não merecem menção por obvi
 
 Referências aqui. (todos, please)
 
+<ul>
+	<li>Mauricio Aniche
+	<li>Cecilia Fernandes
+	<li>Guilherme Silveira
+</ul>
+
+<ul>
+	<li>Mario Amaral
+	<li>Osni Oliveira
+	<li>Suelen Goularte Coelho
+	<li>Rodrigo Turini
+	<li>Adriano Almeida
+	<li>Luiz Corte Real
+	<li>Ricardo Valeriano
+	<li>Guilherme Silveira
+	<li>Lucas Cavalcanti
+	<li>David Robert
+	<li>William Mizuta
+	<li>André Silva
+</ul>
+
 </body>
 </html>
