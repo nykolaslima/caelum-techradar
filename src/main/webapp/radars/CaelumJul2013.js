@@ -55,18 +55,18 @@ var radar_data = [
         "color" : "#8FA227",
         "items" : [ 
 			// hold
-            {"name":"ATDD", "pc":{"r":350,"t":135},"movement":"c"},
             {"name":"Testes em linguagem natural", "pc":{"r":350,"t":95},"movement":"c"},
             {"name":"Site mobile específico", "pc":{"r":350,"t":165},"movement":"c"},    
 
 			// assess
             {"name":"Testes de aceitação", "pc":{"r":250,"t":110},"movement":"c"},    
-            {"name":"Hack Day", "pc":{"r":280,"t":170},"movement":"c"},    
 
 			// trial
             {"name":"Micro serviços", "pc":{"r":180,"t":155},"movement":"c"},    
-            {"name":"Design UX Ágil", "pc":{"r":180,"t":125},"movement":"c"},   
+            {"name":"UX Ágil", "pc":{"r":180,"t":125},"movement":"c"},   
             {"name":"Métricas de Código", "pc":{"r":180,"t":105},"movement":"c"},   
+            {"name":"Hack Day", "pc":{"r":150,"t":170},"movement":"c"},
+            {"name":"Client-side MV*", "pc":{"r":160,"t":135},"movement":"c"},   
 
 			// adopt
             {"name":"Gestão Visual", "pc":{"r":30,"t":100},"movement":"c"},   
@@ -76,8 +76,7 @@ var radar_data = [
             {"name":"DevOps", "pc":{"r":80,"t":110},"movement":"c"},   
             {"name":"Progressive Enhancement", "pc":{"r":80,"t":100},"movement":"c"},   
             {"name":"Design Responsivo", "pc":{"r":70,"t":170},"movement":"c"},   
-            {"name":"Open Source", "pc":{"r":30,"t":100},"movement":"c"},   
-            {"name":"Google Analytics", "pc":{"r":30,"t":160},"movement":"c"} 
+            {"name":"Open Source", "pc":{"r":30,"t":100},"movement":"c"}   
         ]
     },
     { "quadrant": "Tools",
@@ -86,7 +85,8 @@ var radar_data = [
         "color" : "#587486",
         "items" : [ 
 			// hold
-            {"name":"Editor de Texto para Programar", "pc":{"r":390,"t":20},"movement":"c"},   
+            {"name":"Editor de Texto para Programar", "pc":{"r":390,"t":20},"movement":"c"},
+            {"name":"RVM", "pc":{"r":390,"t":355},"movement":"c"},
             {"name":"Gradle", "pc":{"r":310,"t":10},"movement":"c"},   
             {"name":"Backbone JS", "pc":{"r":380,"t":85},"movement":"c"},   
             {"name":"Source Safe", "pc":{"r":380,"t":70},"movement":"c"},   
@@ -94,14 +94,13 @@ var radar_data = [
 			
 			// assess
             {"name":"Grunt JS", "pc":{"r":280,"t":30},"movement":"c"},   
-            {"name":"Infinispam", "pc":{"r":250,"t":85},"movement":"c"},   
             {"name":"Chef", "pc":{"r":250,"t":75},"movement":"c"},   
             {"name":"Jekyll", "pc":{"r":230,"t":65},"movement":"c"},   
             {"name":"Monotouch", "pc":{"r":230,"t":50},"movement":"c"},   
 
 			// trial
-            {"name":"MVC/MVVM", "pc":{"r":160,"t":85},"movement":"c"},   
             {"name":"BitBucket", "pc":{"r":130,"t":85},"movement":"c"},  
+            {"name":"Mod Page Speed", "pc":{"r":150,"t":85},"movement":"c"},  
  
 			// adopt
             {"name":"Git", "pc":{"r":30,"t":55},"movement":"c"},   
@@ -127,28 +126,27 @@ var radar_data = [
 
 			// adopt
             {"name":"Android", "pc":{"r":70,"t":265},"movement":"c"},   
-            {"name":"IOS", "pc":{"r":60,"t":260},"movement":"t"},   
+            {"name":"iOS", "pc":{"r":60,"t":260},"movement":"c"},   
             {"name":"AWS", "pc":{"r":40,"t":255},"movement":"c"},   
             {"name":"GAE", "pc":{"r":80,"t":245},"movement":"c"},   
-            {"name":"Heroku", "pc":{"r":20,"t":200},"movement":"c"}
+            {"name":"Heroku", "pc":{"r":20,"t":200},"movement":"c"},
+            {"name":"SaaS", "pc":{"r":30,"t":240},"movement":"c"}
         ]
     },
-    { "quadrant": "Languages & Frameworks",
+    { "quadrant": "Languages & <br>Frameworks",
         "color" : "#B70062",
         "left"  : (w-200+30),
         "top" :   (h/2 + 18),
         "items" : [ 
 			// hold
-            {"name":"RVM", "pc":{"r":390,"t":355},"movement":"c"},   
             {"name":"Struts 1 e 2", "pc":{"r":370,"t":330},"movement":"c"},   
             {"name":"JSF 1.x", "pc":{"r":390,"t":320},"movement":"c"},   
             {"name":"WebForms", "pc":{"r":360,"t":310},"movement":"c"},   
-            {"name":"Vaadin", "pc":{"r":350,"t":275},"movement":"c"},   
             {"name":"Coffee Script", "pc":{"r":320,"t":340},"movement":"c"},   
 
 			// assess
             {"name":"Less", "pc":{"r":250,"t":280},"movement":"c"},   
-            {"name":"Twitter Bootstrap", "pc":{"r":240,"t":355},"movement":"c"},   
+            {"name":"* Bootstrap", "pc":{"r":240,"t":355},"movement":"c"},   
 
 			// trial
             {"name":"Play", "pc":{"r":170,"t":330},"movement":"c"},   
@@ -156,19 +154,15 @@ var radar_data = [
             {"name":"Entity Framework", "pc":{"r":130,"t":282},"movement":"c"},
 
 			// adopt
-            {"name":"Java", "pc":{"r":40,"t":240},"movement":"c"},
-            {"name":"C#", "pc":{"r":40,"t":350},"movement":"c"},
-            {"name":"Ruby", "pc":{"r":40,"t":330},"movement":"c"},
             {"name":"JSF 2", "pc":{"r":40,"t":330},"movement":"c"},
             {"name":"VRaptor", "pc":{"r":30,"t":282},"movement":"c"},
-            {"name":"Spring MVC", "pc":{"r":30,"t":219},"movement":"c"},
-            {"name":"Sinatra", "pc":{"r":70,"t":150},"movement":"c"},
-            {"name":"Postgres", "pc":{"r":30,"t":182},"movement":"c"},
-            {"name":"NHibernate", "pc":{"r":60,"t":82},"movement":"c"},
-            {"name":"CDI 1.1", "pc":{"r":30,"t":70},"movement":"c"},
-            {"name":"WCF", "pc":{"r":45,"t":310},"movement":"c"},
-            {"name":"HTML5", "pc":{"r":30,"t":147},"movement":"c"},
-            {"name":"Ruby on Rails", "pc":{"r":80,"t":123},"movement":"c"}
+            {"name":"Spring MVC", "pc":{"r":30,"t":319},"movement":"c"},
+            {"name":"Postgres", "pc":{"r":30,"t":310},"movement":"c"},
+            {"name":"(N)Hibernate", "pc":{"r":60,"t":312},"movement":"c"},
+            {"name":"Asp.Net MVC", "pc":{"r":50,"t":292},"movement":"c"},
+            {"name":"CDI", "pc":{"r":30,"t":320},"movement":"c"},
+            {"name":"HTML5", "pc":{"r":30,"t":345},"movement":"c"},
+            {"name":"Ruby on Rails", "pc":{"r":80,"t":310},"movement":"c"}
         ]
     }
 ];
