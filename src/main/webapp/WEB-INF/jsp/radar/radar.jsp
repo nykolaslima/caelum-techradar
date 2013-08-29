@@ -29,12 +29,47 @@
 <h1 id="title" style="text-align: center;"></h1>
 <div id="radar"></div>
 
-Introdução: Mauricio e Ceci.
-Blablabla inicial: motivação, processo (foto), explicação da categorização. 
+<h2>Sobre o Radar</h2>
 
-Pessoas que participaram: todos os que colocaram post-it.
+Nossa ideia ao criar esse radar era divulgar sobre ferramentas, práticas
+e processos que acreditamos. O oposto também é válido: divulgar tudo aquilo
+que, por algum motivo, não acreditamos mais.
 
-Nosso tech radar usa o <a href="http://martinfowler.com/articles/radar-faq.html">formato definido e utilizado</a> pela Thoughtworks em <a href="http://www.thoughtworks.com/radar">seus radares</a>.
+Todo o conteúdo deste documento é fortemente baseado na experiência
+e conhecimentos dos nossos colaboradores.
+Mas como qualquer discussão em engenharia de software, não há uma resposta
+única e exata. Antes de seguir o que está escrito aqui, o leitor deve
+analisar bem o contexto em que está envolvido.
+
+Nosso tech radar usa o <a href="http://martinfowler.com/articles/radar-faq.html">formato definido e utilizado</a> 
+pela Thoughtworks em <a href="http://www.thoughtworks.com/radar">seus radares</a>. 
+
+É importante que o leitor entenda como esse radar funciona.
+Os ítens foram classificados em práticas, ferramentas, plataformas,
+linguagens/frameworks. Cada uma dessas categorias encontra-se em uma 
+das extremidades do radar. 
+
+Além disso, cada ítem foi colocado em um anel, de acordo com nosso 
+sentimento. Os anéis são:
+
+<dl>
+	<dt>Adopt/Adote</dt>
+	<dd>Nós acreditamos que esses ítens podem ser adotados pela indústria. Nós acreditamos
+	que a escolha desses ítens é, na maioria das vezes, acertada.</dd>
+	
+	<dt>Trial</dt>
+	<dd></dd>
+
+	<dt>Assess</dt>
+	<dd></dd>
+
+	<dt>Hold</dt>
+	<dd>Os ítens que estão aqui devem ser evitados.</dd>
+
+</dl>
+
+Esta é a primeira vez que nos organizamos para gerar tal documento. Temos
+muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo. 
 
 <h2 class="quadrante">Práticas</h2>
 
@@ -118,13 +153,17 @@ Java, C# e Ruby já estão inseridas no mercado e não merecem menção por obvi
 		<dd>(Discussão na lista)</dd>
 </dl>
 
-Referências aqui. (todos, please)
+<h2>Participantes</h2>
+
+<h3>Organizadores</h3>
 
 <ul>
 	<li>Mauricio Aniche
 	<li>Cecilia Fernandes
 	<li>Guilherme Silveira
 </ul>
+
+<h3>Colaboradores</h3>
 
 <ul>
 	<li>Mario Amaral
@@ -142,6 +181,7 @@ Referências aqui. (todos, please)
 	<li>Alberto Souza
 	<li>Natanael Pantoja
 </ul>
+
 
 </body>
 </html>
