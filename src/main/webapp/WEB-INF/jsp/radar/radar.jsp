@@ -77,17 +77,60 @@ muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
 	<dt>Client side MV*</dt>
 		<dd>Envers e AngularJS em trial: bem produtivo, muita coisa pronta. Backbone em hold. (Sr. Saúde)</dd>
 	<dt>Testes automatizados</dt>
-		<dd>TDD faz, BDD como maneira de pensar faz, ATDD não. Testes de aceitação não para cada detalhe: só pra coisas importantes. Fuja de testes em linguagem natural. (Ceci e Mauricio)</dd>
+		<dd>
+		
+			Testes automatizados são fundamentais. E dado a essa popularização, muitas ferramentas e práticas
+			apareceram para facilitar o trabalho. Um bom exemplo é a prática de TDD. Nós a recomendamos fortemente, e
+			sugerimos que todos os desenvolvedores façam uso dela ao longo do seu dia de trabalho. TDD e os
+			testes de unidade agregarão diversas vantagens ao seu processo. Você pode ler mais sobre isso nos
+			<a href="http://www.aniche.com.br/publications">trabalhos e pesquisas do Aniche</a>.
+			
+			No entanto, testes de aceitação é algo hoje que olhamos com bastante parcimônia. Não os escrevemos
+			para cada detalhe da aplicação, mas apenas para as partes vitais do sistema. Esse tipo de teste é
+			caro de ser escrito e mantido, e portanto os usamos com parcimônia. Sugerimos também que você fuja
+			de frameworks que possibilitam a escrita desses testes em linguagem natural, como é o caso de Cucumber
+			e JBehave. Essa bateria é geralmente difícil de ser mantida, e o mesmo efeito de legibilidade pode
+			ser alcançado por meio de boas práticas de código de teste. Esse tipo de framework é geralmente associado
+			com a prática de BDD. Acreditamos que o pensamento BDD, ou seja, guiar o desenvolvimento pelo
+			comportamento esperado do sistema, faz sentido. 
+		
+		</dd>
 	<dt>Visualização mobile de sites</dt>
 		<dd>Mobile-specific sites: não. Faz responsivo. (Sérgio?)</dd>
 	<dt>Técnicas de disseminação de conhecimento</dt>
 		<dd>Hack day, vale testar na sua empresa, se possível de aplicar. Brown bag vale muito a pena, gostamos muito, temos toda semana. (Ceci)</dd>
 	<dt>Microservices</dt>
-		<dd>Ideia é bem legal, vale a pena começar a usar: um sistema não quebra o outro, manutenção mais fácil, repetição de código é pouca. MAS não tem um guia de boas práticas, o que dificulta implementações. (Gui)</dd>
+		<dd>
+		
+			A quebra de um programa em diversas partes é uma das grandes discussões de modelagens. 
+			Em uma granularidade maior e pensando em responsabilidades distintas é possível dividir um sistema 
+			em outros menores. Mas com o passar do tempo percebemos empiricamente que a manutenção de tais sistemas 
+			fica cada vez mais complicada. A quebra em micro serviços é uma possibilidade que tem sido mais 
+			discutida nos últimos anos. Mas otimizar uma variável (no caso, o tamanho de cada serviço) 
+			pode complicar outra variável (por exemplo, a complexidade da comunicação).
+
+			Se o que mais dói na evolução dos serviços é a evolução do protocolo de comunicação, há indícios de 
+			que seja interessante minimizar a complexidade da comunicação. Não estamos falando do uso de um 
+			formato mais simples, mas de minimizar a variedade (os tipos) de comunicações entre os sistemas. 
+			Se cada um deles é relativamente pequeno e auto-contido, a interface de comunicação pode ser mais 
+			simples e estável - e este pode ser um bom caminho para quem pretende trabalhar com serviços, 
+			independente de serem micro ou macro.
+		
+		</dd>
 	<dt>UX ágil</dt>
 		<dd>LeanUX, prototipação no navegador (NoPSD), user feedback. Muito legal, agrega muito valor, mas pode ser difícil de aplicar. (Archie)</dd>
 	<dt>Métricas</dt>
-		<dd>Métricas de código (Mauricio e Chico), métricas de vendas (Gui)</dd>
+		<dd>
+		
+			Temos gostado cada vez mais de fazer uso de métricas de código para encontrar trechos
+			de código deficientes no sistema. Elas são geralmente uma forma barata de detectar problemas.
+			Em nossa opinião, todas as métricas são bem vistas; elas erram, mas acertam bastante também.
+			
+			Existem diversas ferramentas que as calculam, como é o 
+			caso do Eclipse Metrics, JDepend, e etc. O problema é que elas são difíceis de serem utilizadas
+			juntas. Hoje temos usado uma <a href="http://www.codesheriff.com">ferramenta própria</a>. 
+			
+		</dd>
 	<dt>Gestão visual</dt>
 		<dd>Quadro (passivo), Trello (ativo). Se fizer parte do workflow do time ficar sempre olhando pras coisas, blz ser ativo. (Ceci)</dd>
 	<dt>Práticas ágeis</dt>
@@ -103,7 +146,15 @@ muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
 
 <dl>
 	<dt>Editor de texto para programar</dt>
-		<dd>IDEs trazem facilidades gigantes em refactoração, code completion, navegação no código. Não importa a IDE: Vim com plugins certos, é IDE.</dd>
+		<dd>
+			IDEs trazem muitas facilidades para o desenvolvedor, como refatoração, code completion, navegação
+			no código, etc. Não importa qual seja a sua IDE favorita (Eclipse, NetBeans, Visual Studio), mas use uma.
+			
+			Não somos a favor do uso de editores de texto simples como IDE. Programar usando um bloco de notas não
+			é produtivo e totalmente sujeito a erros. Uma exceção é o VIM, que com seu conjunto de plugins, torna-se
+			uma IDE bastante interessante para quem sabe usar. 
+		
+		</dd>
 	<dt>Controladores de versão</dt>
 		<dd>Lock-based: Pára! Centralizado: fuja. Git com Github ou Bitbucket, beleza. Hg também beleza, mas mercado menor aumenta o risco da tecnologia. Estude ambos, não use como SVN/CVS.</dd>
 	<dt>Jekyll</dt>
@@ -122,7 +173,30 @@ muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
 
 <dl>
 	<dt>Mobile</dt>
-		<dd>Android, iOS e Windows Phone. Discussão do mercado disso, dos devs específicos de cada uma e do Monotouch como uma boa opção para assess. (André, Erich e Osni)</dd>
+		<dd>
+		
+		Hoje, o mercado está dividido entre Android (maior penetração) e iOS (maior geração de receita). 
+		O Windows Phone aparece como uma terceira opção, mas cremos que vá tomar o lugar de nenhum dos principais - 
+		pelo menos não tão cedo. A questão é que usuários de Android ou iOS são fiéis a suas plataformas e, 
+		normalmente, investiram dinheiro em Apps. Para que eles mudem de plataforma (e percam parte desse 
+		investimento no processo), normalmente precisa acontecer algo grave (seguidas versões ruins, experiências desastrosas, etc.) ou um 
+		distanciamento tecnológico muito grande (uma plataforma ficar muito a frente da outra). Vemos muitos usuários de iOS com 
+		disposição para tentar Android e vice-versa, mas poucos querendo dar uma chance ao Windows Phone. 
+
+		O Monotouch agora se chama Xamarin (nome da empresa que desenvolve) e é uma alternativa que está ganhando espaço, 
+		inclusive chamando nossa atenção. A ideia é escrever uma base de código única, 
+		compilar para cada plataforma (iOS e Android, das mobile) e gerar Apps nativos para cada uma. 
+		Como conseguir isso, se as APIs são tão diferentes? Usando o .NET Framework (port) ao máximo, 
+		deixando pouca coisa para as APIs nativas. Ainda não é 100% mágico, ainda é preciso tratar 
+		diferenças entre cada plataforma. Mas está chegando perto! A linguagem usada é o C#, que dispensa apresentações. 
+		O IDE está em constante evolução e agora consegue desenhar a interface gráfica de forma 
+		integrada (antes era preciso usar o Interface Builder no iOS ou escrever código no Android). 
+		Em nossa opinião, a principal vantagem está em usar o C# e .NET framework, possibilitando uma 
+		base de código única (ou quase) compartilhada entre Android, iOS e Windows Phone. 
+		Está cada vez mais maduro e tem cases muito bons 
+		(como o App do rdio, que é excelente e totalmente feito na plataforma).
+		
+		</dd>
 	<dt>JavaEE 7</dt>
 		<dd>Só é assess porque só roda no JBoss 8, que é alpha, e no GlassFish 4. (Albie e Mario)</dd>
 	<dt>Computação na nuvem</dt>
@@ -134,7 +208,9 @@ muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
 
 <h2 class="quadrante">Linguagens e Frameworks</h2>
 
-Java, C# e Ruby já estão inseridas no mercado e não merecem menção por obviedade. Mesmo pra HTML5.
+Java, C# e Ruby já estão inseridas no mercado e não merecem menção por obviedade. Acreditamos que a escolha
+dessas linguagens seja uma boa escolha na maioria absoluta dos casos. O mesmo vale pra HTML5, pois não vemos
+um motivo óbvio para não adotar.
 
 <dl>
 	<dt>Action-based frameworks</dt>
@@ -146,14 +222,32 @@ Java, C# e Ruby já estão inseridas no mercado e não merecem menção por obvi
 	<dt>Geradores de JS</dt>
 		<dd>CoffeeScript: debug é complicado, tem que saber JS de qualquer forma. Faz seu JS e encapsula direito que é mais fáicl de dar manutenção, entre outras coisas. (Jovis)</dd>
 	<dt>Pré-processadores e bibliotecas de CSS</dt>
-		<dd>Less, Sass. Ideia em assess porque tem que saber CSS anyway. *Bootstrap em assess pq precisa ver se vale a pena no seu caso: se for mudar muita coisa, não use. (Mizuta)</dd>
+		<dd>
+		
+		Apesar do LESS/SASS e outros geradores de CSS trazerem ótimos recursos para o desenvolvedor, ele torna mais 
+		fácil escrever um código ilegível do que com CSS puro. Precisa realmente testar se a equipe 
+		consegue se adaptar com essas ferramentas para não ter que refazer o CSS após algum tempo de projeto.
+
+		Quanto ao Twitter Bootstrap, se não há a necessidade de um layout exclusivo, ele é uma ótima opção para 
+		agilizar o processo de front-end. Mas, para customizá-lo, você terá tanto trabalho 
+		que vale a pena começar um CSS do zero do que tentar entender o bootstrap e modificá-lo.
+		
+		</dd>
 	<dt>NoSQL</dt>
 		<dd>Baita ideia legal, tem seu nicho de aplicação cada vez mais forte por conta de BigData e modelagens em grafos. Só não tem tanta gente que consegue se disassociar do viés ER. Neo4J, MongoDB, Redis. (Dri)</dd>
 	<dt>Linguagens que merecem menção</dt>
-		<dd>(Discussão na lista)</dd>
+		<dd>
+			Algumas linguagens devem ser comentadas, pois estão fazendo algum sucesso na comunidade.
+			Scala é um bom exemplo. Acreditamos hoje que Scala pode ser usado para pequenas partes (ou micro-serviços)
+			do seu projeto. Apesar de poderosa, o compilador ainda é bastante lento, e se o desenvolvedor abuse de recursos
+			como mixins, o código pode acabar se tornando complicado e difícil de manter.
+		</dd>
 </dl>
 
 <h2>Participantes</h2>
+
+Agradecemos a todos os colaboradores da Caelum que de alguma forma participaram da
+criação deste Radar. 
 
 <h3>Organizadores</h3>
 
