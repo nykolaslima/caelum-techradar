@@ -53,17 +53,17 @@ Além disso, cada ítem foi colocado em um anel, de acordo com nosso
 sentimento. Os anéis são:
 
 <dl>
-	<dt>Adopt/Adote</dt>
-	<dd>Nós acreditamos que esses ítens podem ser adotados pela indústria. Nós acreditamos
+	<dt>Adopt / Adote</dt>
+	<dd>Nós acreditamos que esses ítens podem ser adotados pela indústria. Acreditamos
 	que a escolha desses ítens é, na maioria das vezes, acertada.</dd>
 	
-	<dt>Trial</dt>
-	<dd></dd>
+	<dt>Trial / Experimente</dt>
+	<dd>Vale a pena testar em projetos menores ou com baixa criticidade.</dd>
 
-	<dt>Assess</dt>
-	<dd></dd>
+	<dt>Assess / Explore</dt>
+	<dd>Deve ser explorados com o objetivo de ver como se encaixa em sua empresa.</dd>
 
-	<dt>Hold</dt>
+	<dt>Hold / Evite</dt>
 	<dd>Os ítens que estão aqui devem ser evitados.</dd>
 
 </dl>
@@ -136,7 +136,17 @@ muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
 	<dt>Práticas ágeis</dt>
 		<dd>Refatoração, programação pareada, retrospectiva, code review, desenvolvimento iterativo e incremental, integração contínua, one-click deploy. Não 100% do tempo, mas adotar. (Ceci)</dd>
 	<dt>DevOps</dt>
-		<dd>Pra criar a mentalidade dos desenvolvedores de que infra é fail point e parte do trabalho. Deve ser automatizado. (Adriano)</dd>
+		<dd>
+		
+			Os desenvolvedores precisam estar atentos a todos os pontos de falha que um software pode ter e 
+			isso vai muito além dos tradicionais bugs que o sistema pode ter. A infraestrutura da aplicação é 
+			um ponto importante nisso e os desenvolvedores que conhecem aspectos importantes disso levam muita 
+			vantagem na resolução desses problemas. Saber configurar um servidor, customizar de acordo com as 
+			necessidades do projeto e corrigir problemas de infraestrutura, além de aumentar o senso de 
+			responsabilidade da equipe sobre o sistema em questão, traz maior versatilidade do time e uma 
+			fonte de experiência para projetos futuros.
+		
+		</dd>
 	<dt>Open Source</dt>
 		<dd>Maior parte das soluções que usamos, aprendizado é interessante, dar de volta pra comunidade, expor sua marca. Use e faça. (Ceci)</dd>
 </dl>
@@ -234,7 +244,19 @@ um motivo óbvio para não adotar.
 		
 		</dd>
 	<dt>NoSQL</dt>
-		<dd>Baita ideia legal, tem seu nicho de aplicação cada vez mais forte por conta de BigData e modelagens em grafos. Só não tem tanta gente que consegue se disassociar do viés ER. Neo4J, MongoDB, Redis. (Dri)</dd>
+		<dd>
+		
+		Os bancos de dados não relacionais possuem diversos casos de uso em que funcionam melhores do que a 
+		tradicional abordagem relacional. No entanto, tanto os desenvolvedores como os administradores de 
+		dados precisam deixar de lado boa parte de seu conhecimento prévio do paradigma relacional e se 
+		abrirem para um mundo novo, com abordagens muito diferentes das que estão acostumados.
+
+		Essa mentalidade é um dos pontos principais para uma adoção de sucesso dos bancos de dados não 
+		relacionais. Entender que alguns tipos de bancos de dados são melhores aplicados a determinados 
+		problemas pode fazer a diferença para um caso de sucesso da adoção de NoSQL em um projeto.
+		
+		
+		</dd>
 	<dt>Linguagens que merecem menção</dt>
 		<dd>
 			Algumas linguagens devem ser comentadas, pois estão fazendo algum sucesso na comunidade.
