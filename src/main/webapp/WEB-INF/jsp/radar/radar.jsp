@@ -96,7 +96,26 @@ muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
 		
 		</dd>
 	<dt>Visualização mobile de sites</dt>
-		<dd>Mobile-specific sites: não. Faz responsivo. (Sérgio?)</dd>
+		<dd>
+		
+			O crescimento do mercado mobile é gigantesco em todo o mundo. 
+			No Brasil, a penetração de smartphones e tablets no mercado é um pouco mais lenta, 
+			mas tem crescido a passos largos, impulsionada por iniciativas governamentais, produção local de 
+			aparelhos, popularização do 3G, início do 4G e oferta de aparelhos bons cada vez mais baratos. 
+			Nesse cenário, acreditamos que a Web tem um papel fundamental.
+
+			Acreditamos na estratégia "Web First", deixando a construção de aplicativos nativos em segundo 
+			plano e apenas em cenários onde são necessários e agregam real valor pro usuário e para a empresa. 
+			Acreditamos na Web acessível, multiplataforma e democrática. Por essa razão, recomendamos que se 
+			adote o design responsivo e outras técnicas de design adaptativo pra prover um único site, 
+			fluído e flexível, para todos os usuários. Entendemos que, como toda solução, o design 
+			responsivo tem suas limitações, mas acreditamos que seus benefícios fazem dessa técnica a 
+			melhor abordagem, ao invés da criação de sites mobile separados. Adotar a estratégia de um site 
+			único adaptável é a melhor maneira de estar preparado para a evolução da Web 
+			e dos dispositivos do futuro.
+
+		
+		</dd>
 	<dt>Técnicas de disseminação de conhecimento</dt>
 		<dd>Hack day, vale testar na sua empresa, se possível de aplicar. Brown bag vale muito a pena, gostamos muito, temos toda semana. (Ceci)</dd>
 	<dt>Microservices</dt>
@@ -170,7 +189,23 @@ muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
 	<dt>Jekyll</dt>
 		<dd>Instável, muda com a versão e isso atrapalha porque documentação não devia dar trabalho. Alternativa: MiddleMan(Archie)</dd>
 	<dt>Gerenciamento de dependências</dt>
-		<dd>Use sempre. Escolha o mais confortável para sua stack de tecnologias e seus conhecimentos e manda bala: Ant+Ivy, Maven, Bundler, SBT. Hold RVM. (Ongoing discussion na lista. Lucas?)</dd>
+		<dd>
+		
+		Foi-se o tempo em que era necessário garimpar a internet para achar o link para o download da biblioteca que 
+		vamos usar na nossa aplicação. Hoje em dia qualquer ambiente de programação respeitável possui alguma 
+		ferramenta em que podemos declarar quais são as bibliotecas necessárias para que a aplicação rode. 
+		Esse tipo de ferramenta baixa todas as bibliotecas declaradas, junto com as suas dependências.
+		
+		Portanto, considere fortemente usar o gerenciador de dependências mais 
+		usado ou o mais fácil de usar do seu ambiente de desenvolvimento. Dessa forma, com algumas poucas 
+		linhas de configuração e um comando conseguimos baixar todas as bibliotecas e suas dependências. 
+		Exemplos são o Maven e o Ivy para Java, o Gradle para Java/Groovy, o SBT para Scala, Bundler para Ruby. 
+		
+		Em casos raros, caso a ferramenta comece a atrapalhar, por exemplo demorando demais para fazer 
+		os downloads ou complicando a configuração, você sempre pode pedir para baixar todas as bibliotecas, 
+		incluí-las no projeto e parar de usar a ferramenta.
+		
+		</dd>
 	<dt>Profiling</dt>
 		<dd>Ferramentas como New Relic (nossa favorita) são legais e é interessante mantê-las rodando o tempo todo, não só quando dá caca. (Mario)</dd>
 	<dt>NginX (nome mais genérico?)</dt>
@@ -210,7 +245,21 @@ muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
 	<dt>JavaEE 7</dt>
 		<dd>Só é assess porque só roda no JBoss 8, que é alpha, e no GlassFish 4. (Albie e Mario)</dd>
 	<dt>Computação na nuvem</dt>
-		<dd>OpenShift: assess porque não é maduro ainda (Albie). AWS, GAE e Heroku: independente da sua opção, você vai ser feliz (Rodrigo).</dd>
+		<dd>
+		
+		Fazer uso de computação na nuvem é com certeza uma escolha acertada. As diversas plataformas existentes no mercado
+		são bem maduras. 
+		
+		O GAE, por exemplo, oferece uma administração simples, é fácil de escalar e tem diferenciais 
+		como seu armazenamento de dados distribuído que cresce conforme os seus dados aumentam. 
+		O Heroku conquista com a agilidade de fazer um deploy, seu ambiente de homologação e variedade de add-ons 
+		para incrementar serviços na plataforma. A AWS te fornece uma plataforma elástica de fácil escalabilidade, 
+		bastante flexibilidade pra evoluir com de acordo com suas novas necessidades e a evolução da sua empresa, 
+		além de uma gigante infraesturura e variedade de serviços. 
+		
+		Nossa única ressalva atual ainda é com o OpenShift, pois acreditamos ainda que não é maduro o suficiente,
+		comparado aos citados anteriormente.
+		
 	<dt>SAAS</dt>
 		<dd>Se já há uma solução boa para seu problema rodando na nuvem, use. Exemplo: Github, IronIO, Wordpress, etc. (Sérgio)</dd>
 </dl>

@@ -49,7 +49,7 @@ var h = 1160;
 var w = 1200;
 
 var radar_data = [
-    { "quadrant": "Techniques",
+    { "quadrant": "Técnicas",
         "left" : 45,
         "top" : 18,
         "color" : "#8FA227",
@@ -79,7 +79,7 @@ var radar_data = [
             {"name":"Open Source", "pc":{"r":30,"t":100},"movement":"c"}   
         ]
     },
-    { "quadrant": "Tools",
+    { "quadrant": "Ferramentas",
         "left": w-200+30,
         "top" : 18,
         "color" : "#587486",
@@ -114,7 +114,7 @@ var radar_data = [
             {"name":"Node JS", "pc":{"r":30,"t":30},"movement":"c"}
         ]
     },
-    { "quadrant": "Platforms",
+    { "quadrant": "Plataformas",
         "left" :45,
          "top" : (h/2 + 18),
         "color" : "#DC6F1D",
@@ -133,7 +133,7 @@ var radar_data = [
             {"name":"SaaS", "pc":{"r":30,"t":240},"movement":"c"}
         ]
     },
-    { "quadrant": "Languages & <br>Frameworks",
+    { "quadrant": "Linguagens e Frameworks",
         "color" : "#B70062",
         "left"  : (w-200+30),
         "top" :   (h/2 + 18),
