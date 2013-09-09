@@ -75,7 +75,22 @@ muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
 
 <dl>
 	<dt>Client side MV*</dt>
-		<dd>Envers e AngularJS em trial: bem produtivo, muita coisa pronta. Backbone em hold. (Sr. Saúde)</dd>
+		<dd>
+
+			Um dos maiores problemas enfrentados em aplicações web atualmente é lidar com diferentes 
+			versões de dados no cliente e no servidor. Cuidar da sincronização de todos esses dados por 
+			conta própria é bastante penoso e, por isso, surgiram, nos últimos tempos, diversas bibliotecas 
+			que procuram abstrair esse trabalho.
+
+			Backbone talvez seja a mais conhecida atualmente e a primeira a ganhar tração no mercado. Porém, 
+			acreditamos que a abordagem seguida por ela não é tão efetiva quanto poderia ser: 
+			ainda é necessário escrever muito código para configurar a manipulação dos dados 
+			e a sua relação com a interface. 
+			
+			Já as bibliotecas Envers e AngularJS apresentam uma abordagem declarativa bastante simples e 
+			parecem ser o caminho a se seguir para tratar desse problema.
+		
+		</dd>
 	<dt>Testes automatizados</dt>
 		<dd>
 		
@@ -137,7 +152,21 @@ muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
 		
 		</dd>
 	<dt>UX ágil</dt>
-		<dd>LeanUX, prototipação no navegador (NoPSD), user feedback. Muito legal, agrega muito valor, mas pode ser difícil de aplicar. (Archie)</dd>
+		<dd>
+		
+			Não é difícil encontrar casos de sucesso de implementações de Lean UX, a colaboração de toda a 
+			equipe no processo de criação de protótipos e a coleta constante do feedback dos usuários prometem 
+			garantir o melhor design para o produto. A ideia de se ter feedback constante do usuário final,
+			prototipação no navegador (movimento NoPSD) são bastante interessantes.
+
+			Porém, a implementação de Lean UX em ambientes de desenvolvimento ágil é ainda um grande desafio.  
+			O tempo, os processos necessários e os esforços dos integrantes da equipe são distribuídos de forma bem diferente. 
+			Para satisfazer essas necessidades são necessárias adaptações das práticas ágeis com as quais a equipe já está acostumada 
+			e que nem sempre são viáveis. Nosso conselho, portanto, é para que sua equipe comece a pensar em práticas ágeis também
+			para a área de usabilidade.
+		
+		
+		</dd>
 	<dt>Métricas</dt>
 		<dd>
 		
@@ -153,7 +182,15 @@ muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
 	<dt>Gestão visual</dt>
 		<dd>Quadro (passivo), Trello (ativo). Se fizer parte do workflow do time ficar sempre olhando pras coisas, blz ser ativo. (Ceci)</dd>
 	<dt>Práticas ágeis</dt>
-		<dd>Refatoração, programação pareada, retrospectiva, code review, desenvolvimento iterativo e incremental, integração contínua, one-click deploy. Não 100% do tempo, mas adotar. (Ceci)</dd>
+		<dd>
+			É bem difícil argumentar contra o uso de práticas ágeis. Acreditamos bastante na efetividade de práticas como refatoração,
+			programação pareada, retrospectivas constantes, testes automatizados, TDD, revisão de código, desenvolvimento 
+			iterativo e incremental, integração contínua, one-click deploy, e etc. 
+			
+			Mas, acreditamos que nenhuma dessas práticas devem ser usadas 100% do tempo. A equipe deve decidir qual e quando usar
+			cada uma das práticas. O processo deve ser moldado de acordo com o contexto daquele momento.
+		
+		</dd>
 	<dt>DevOps</dt>
 		<dd>
 		
@@ -185,9 +222,31 @@ muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
 		
 		</dd>
 	<dt>Controladores de versão</dt>
-		<dd>Lock-based: Pára! Centralizado: fuja. Git com Github ou Bitbucket, beleza. Hg também beleza, mas mercado menor aumenta o risco da tecnologia. Estude ambos, não use como SVN/CVS.</dd>
+		<dd>
+		
+			Controladores de versão são populares há muito tempo. Mas, dado que existem diversos, temos hoje algumas preferências.
+			Controladores que fazem uso de travas, como é o caso do Visual Source Safe, devem ser evitados.
+			
+			Já Git e Mercurial são opções bastante interessantes. Ainda mais porque ambos apresentam ferramentas ao redor, como
+			é o caso do Github e Bitbucket, que facilitam bastante a interação entre os vários desenvolvedores do projeto.
+			Apesar de bons, ambos são ferramentas um pouco mais complicadas do que SVN/CVS. Nosso conselho é que, após escolher
+			uma das ferramentas, estude-a para que você consiga extrair o melhor possível dela.
+		
+		</dd>
 	<dt>Jekyll</dt>
-		<dd>Instável, muda com a versão e isso atrapalha porque documentação não devia dar trabalho. Alternativa: MiddleMan(Archie)</dd>
+		<dd>
+		
+		Criar e manter um site de conteúdo estático, desde um blog à documentação de um software, não deveriam ser tarefas trabalhosas. 
+		A ideia do Jekyll é garantir que não sejam. O que diferencia o Jekyll de seus concorrentes e poderia torná-lo uma escolha promissora 
+		é o suporte nativo e gratuito dado pelo Github em seu serviço de publicação de páginas, o Github Pages. 
+		Porém, certa instabilidade desse serviço ainda é um problema, já que as atualizações do Jekyll são frequentes e 
+		não há nenhum tipo de controle de versão.
+
+		Se você precisa de estabilidade e manter um servidor não for um problema, existem alternativas mais poderosas para a 
+		geração de sites estáticos, como o Middleman, que permite, por exemplo, escolher a linguagem de template utilizada e 
+		algumas outras configurações que o Jekyll não oferece.
+
+		</dd>
 	<dt>Gerenciamento de dependências</dt>
 		<dd>
 		
@@ -261,7 +320,15 @@ muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
 		comparado aos citados anteriormente.
 		
 	<dt>SAAS</dt>
-		<dd>Se já há uma solução boa para seu problema rodando na nuvem, use. Exemplo: Github, IronIO, Wordpress, etc. (Sérgio)</dd>
+		<dd>
+			Temos feito muito uso de software como serviço. Na maioria dos casos, eles barateiam a solução e funcionam
+			bem. Exemplos disso são o Github (nossos códigos-fonte estão hospedados lá), Wordpress (serviço de blog), Iron IO
+			(filas assíncronas), Amazon AWS, e etc.
+			
+			Nossa sugestão é que, caso o serviço necessitado não seja o negócio principal de sua empresa, talvez
+			valha a pena fazer uso de um terceiro, cujo foco é justamente aquele determinado serviço.  
+		
+		</dd>
 </dl>
 
 
