@@ -266,7 +266,14 @@ muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
 		
 		</dd>
 	<dt>Profiling</dt>
-		<dd>Ferramentas como New Relic (nossa favorita) são legais e é interessante mantê-las rodando o tempo todo, não só quando dá caca. (Mario)</dd>
+		<dd>
+		
+		Ferramentas de profiling devem ser utilizadas durante todo o ciclo de desenvolvimento e não apenas quando acontece algum 
+		problema no sistema em produção. Reagir é sempre mais complicado do que prevenir. Então sugerimos que as empresas
+		façam analise dos dados constatemente para que possa tentar se antecipar aos problemas.
+		
+		
+		</dd>
 	<dt>NginX (nome mais genérico?)</dt>
 		<dd>No brutal ajudou bastante como um proxy pra falar com um jetty ou outro, um load balacer, serve os arquivos estáticos muito mais rápido. Só que ainda usamos pouco... dá pra usar muito mais coisas dele. (Leozinho)</dd>
 	<dt>Server-side JS</dt>
@@ -302,7 +309,15 @@ muito ainda a aprender sobre ele, e portanto, todo feedback é bem vindo.
 		
 		</dd>
 	<dt>JavaEE 7</dt>
-		<dd>Só é assess porque só roda no JBoss 8, que é alpha, e no GlassFish 4. (Albie e Mario)</dd>
+		<dd>
+		
+			Utilizar as implementações do JAVAEE já é uma realidade. A plataforma chegou em um nível de maturidade muito grande e, 
+			aliado a isso, conseguiu atingir um indice de simplicidade enorme. Desenvolver usando EJB's, Mensagens, Transações 
+			gerenciadas pelo container está muito fácil. Os servidores fizeram um ótimo trabalho para diminuir o tempo de 
+			startup e com isso os argumentos que eles eram pesados e tudo mais foram jogados para o lado. 
+			Para completar, a especificação de Injeção de Dependências uniu tudo isso e veio ainda melhor na versão 7. 
+		
+		</dd>
 	<dt>Computação na nuvem</dt>
 		<dd>
 		
